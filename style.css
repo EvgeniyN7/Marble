@@ -622,7 +622,7 @@ h2 {
   margin-bottom: 25px;
 }
 
-.footer-text.contacts {
+.contacts {
   margin: 0 0 5px 22px;
 }
 
@@ -668,20 +668,23 @@ h2 {
   line-height: 1.6;
   margin-bottom: 30px;
 }
+
 .footer_list {
   margin: 0;
   padding: 0 0 0 18px;
   list-style-image: url(img/twitter.svg);
 }
 
-.footer-link p,
-.footer-link {
+.footer-link,
+.footer-link p {
   -webkit-text-decoration: none #cacaca;
   text-decoration: none #cacaca;
   transition: all 0.2s ease;
+  color: #cacaca;
 }
 
-.footer-link:hover p {
+.footer-link:hover,
+.footer-link p:hover {
   -webkit-text-decoration: underline #cacaca;
   text-decoration: underline #cacaca;
   opacity: 0.6;
@@ -705,5 +708,8 @@ h2 {
   .column {
     width: 45%;
     margin-right: 0;
+  }
+  .column:nth-last-child(-n + 2) {
+    margin-top: 25px;
   }
 }
